@@ -64,3 +64,9 @@ address {
     margin: auto;
     object-fit: cover;
 }
+
+#carouselButton {
+    margin: auto;
+    z-index: 1;
+    top: -180px;
+}
