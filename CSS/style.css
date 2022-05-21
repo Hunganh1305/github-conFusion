@@ -48,3 +48,19 @@ address {
 .nav-login {
     color: #ddd;
 }
+
+.carousel {
+    background: #512DA8;
+
+}
+
+.carousel-item {
+    height: 900px;
+}
+
+.carousel-item img {
+    min-height: 100%;
+    width: 80%;
+    margin: auto;
+    object-fit: cover;
+}
