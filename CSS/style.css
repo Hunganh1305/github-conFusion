@@ -24,6 +24,9 @@ address {
   margin: 0px;
   color: #0f0f0f; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   padding: 50px 0px 0px 0px;
   z-index: 0; }
@@ -40,21 +43,90 @@ body {
 .carousel {
   background: #512DA8; }
   .carousel .carousel-item {
-    height: 900px; }
+    height: 600px; }
     .carousel .carousel-item img {
       position: absolute;
-      left: 200px;
-      min-height: 900px;
+      left: 10%;
+      min-height: 600px;
       width: 80%;
       object-fit: cover;
       margin: 0 auto; }
     .carousel .carousel-item h5 {
-      font-size: 40px;
+      font-size: 30px;
       font-weight: 600; }
     .carousel .carousel-item p {
-      font-size: 40px; }
+      font-size: 30px; }
 
 #carouselButton {
   position: absolute;
   margin: 0 auto;
   z-index: 1; }
+
+.nav-login a {
+  color: #ddd; }
+
+.closeBtn {
+  font-size: 30px; }
+
+.nav-login {
+  cursor: pointer; }
+
+.formReserver .modal-header {
+  background-color: #512DA8;
+  color: #ddd; }
+
+.formReserver .card-body {
+  background-color: #D1C4E9; }
+
+.modal-content .modal-header {
+  background-color: #512DA8;
+  color: #ddd; }
+
+.modal-content .modal-body {
+  background-color: #D1C4E9; }
+
+.modal-content .form-btn {
+  display: flex;
+  justify-content: flex-end; }
+
+#accordion a {
+  color: #0f0f0f;
+  cursor: pointer; }
+
+.backgroundModal {
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 4; }
+
+.modal_inner {
+  width: 600px;
+  position: relative;
+  top: 11%;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+  animation: modalShow 0.5s linear;
+  transition: 0.5s; }
+
+.hide {
+  display: none; }
+
+.navbar {
+  z-index: 1; }
+
+@keyframes modalShow {
+  from {
+    top: -200px;
+    opacity: 0; }
+  to {
+    top: 50;
+    opacity: 1; } }
+
+#myCarousel {
+  z-index: 0; }
+
+#carouselButton {
+  z-index: 0; }
