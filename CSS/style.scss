@@ -1,0 +1,189 @@
+$lt-gray: #ddd;
+$background-dark: #512DA8;
+$background-light: #9575CD;
+$background-pale: #D1C4E9;
+// Height variables
+$carousel-item-height: 600px;
+
+@mixin zero-margin($pad-up-dn, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-dn $pad-left-right;
+}
+
+.row-header {
+    @include zero-margin(0px, 0px);
+}
+
+.row-content {
+    @include zero-margin(50px, 0px);
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.footer {
+    background-color: $background-pale;
+    @include zero-margin(20px, 0px);
+}
+
+.jumbotron {
+    @include zero-margin(70px, 30px);
+    background: $background-light;
+    color: floralwhite;
+}
+
+address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark {
+    background-color: $background-dark;
+}
+
+.tab-content {
+    border-left: 1px solid $lt-gray;
+    border-right: 1px solid $lt-gray;
+    border-bottom: 1px solid $lt-gray;
+    padding: 10px;
+}
+
+.carousel {
+    background: $background-dark;
+
+    .carousel-item {
+        height: $carousel-item-height;
+
+        img {
+            position: absolute;
+            left: 10%;
+            min-height: 600px;
+            width: 80%;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+
+        h5 {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    }
+}
+
+#carouselButton {
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+
+.nav-login {
+    a {
+        color: $lt-gray;
+    }
+}
+
+.closeBtn {
+    font-size: 30px;
+}
+
+.nav-login {
+    cursor: pointer;
+}
+
+.formReserver {
+    .modal-header {
+        background-color: $background-dark;
+        color: $lt-gray;
+    }
+
+    .card-body {
+        background-color: $background-pale;
+    }
+}
+
+.modal-content {
+    .modal-header {
+        background-color: $background-dark;
+        color: $lt-gray;
+    }
+
+    .modal-body {
+        background-color: $background-pale;
+    }
+
+    .form-btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+#accordion {
+    a {
+        color: #0f0f0f;
+        cursor: pointer;
+    }
+}
+
+.backgroundModal {
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 4;
+}
+
+.modal_inner {
+    width: 600px;
+    position: relative;
+    top: 11%;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    animation: modalShow 0.5s linear;
+    transition: 0.5s;
+}
+
+.hide {
+    display: none;
+}
+
+.navbar {
+
+    z-index: 1;
+
+}
+
+@keyframes modalShow {
+    from {
+        top: -200px;
+        opacity: 0;
+    }
+
+    to {
+        top: 50;
+        opacity: 1;
+    }
+}
+
+#myCarousel {
+    z-index: 0;
+}
+
+#carouselButton {
+    z-index: 0;
+}
